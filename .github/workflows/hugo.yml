@@ -29,6 +29,7 @@ defaults:
 jobs:
   # Build job
   build:
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.147.3
