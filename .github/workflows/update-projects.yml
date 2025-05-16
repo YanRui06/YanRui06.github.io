@@ -70,6 +70,8 @@ jobs:
           python update_projects.py
           
       - name: Commit changes
+        permissions:
+          contents: write
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
