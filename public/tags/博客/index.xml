@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>博客 on </title>
+    <link>https://yanrui06.github.io/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on </description>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://yanrui06.github.io/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Hugo 搭建个人博客</title>
+      <link>https://yanrui06.github.io/posts/hugo-blog-setup/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://yanrui06.github.io/posts/hugo-blog-setup/</guid>
+      <description>&lt;h2 id=&#34;hugo-博客搭建教程&#34;&gt;Hugo 博客搭建教程&lt;/h2&gt;
+&lt;p&gt;在这篇文章中，我将分享如何使用 Hugo 搭建一个个人技术博客。&lt;/p&gt;
+&lt;h3 id=&#34;为什么选择-hugo&#34;&gt;为什么选择 Hugo？&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;快速：Hugo 是世界上最快的静态网站生成器之一&lt;/li&gt;
+&lt;li&gt;简单：配置简单，容易上手&lt;/li&gt;
+&lt;li&gt;灵活：支持多种主题和自定义功能&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;搭建步骤&#34;&gt;搭建步骤&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;安装 Hugo&lt;/li&gt;
+&lt;li&gt;创建新站点&lt;/li&gt;
+&lt;li&gt;选择主题&lt;/li&gt;
+&lt;li&gt;配置站点&lt;/li&gt;
+&lt;li&gt;部署到 GitHub Pages&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;（文章详细内容请根据您的实际经验补充&amp;hellip;）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>我的第一篇博客</title>
+      <link>https://yanrui06.github.io/posts/first-post/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://yanrui06.github.io/posts/first-post/</guid>
+      <description>&lt;h2 id=&#34;欢迎来到我的博客&#34;&gt;欢迎来到我的博客&lt;/h2&gt;
+&lt;p&gt;这是我的个人技术博客的第一篇文章。在这里，我将会分享：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;技术学习笔记&lt;/li&gt;
+&lt;li&gt;项目开发经验&lt;/li&gt;
+&lt;li&gt;编程心得体会&lt;/li&gt;
+&lt;li&gt;技术书籍推荐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;希望能与大家一起交流学习，共同进步！&lt;/p&gt;
+&lt;p&gt;&amp;ndash; Zephyr&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

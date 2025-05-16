@@ -1,0 +1,15 @@
+YanRui.github.io/
+├── archetypes/     # 内容模板目录
+├── assets/         # 需要处理的资源文件
+├── content/        # 网站内容目录
+├── data/          # 配置数据目录
+├── i18n/          # 国际化文件
+├── layouts/       # 自定义布局目录（当前为空）
+├── public/        # 生成的静态文件
+├── static/        # 静态资源目录
+├── themes/        # 主题目录
+│   └── PaperMod/  # 使用的主题
+├── config.yaml    # 网站配置文件
+└── .github/workflows/  # GitHub Actions 工作流配置
+    ├── hugo.yml        # Hugo 部署工作流
+    └── update-projects.yml  # 项目更新工作流
