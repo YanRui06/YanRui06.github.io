@@ -1,0 +1,78 @@
+name: Update Projects
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天运行一次
+  workflow_dispatch:      # 允许手动触发
+  push:
+    branches:
+      - main            # 当主分支有更新时触发
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyGithub
+          
+      - name: Update projects
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cat > update_projects.py << 'EOF'
+          from github import Github
+          import os
+          
+          def update_projects():
+              g = Github(os.environ['GITHUB_TOKEN'])
+              user = g.get_user('YanRui06')
+              repos = user.get_repos()
+              
+              content = """---
+          title: "项目"
+          date: 2024-01-01
+          draft: false
+          ---
+          
+          ## 我的项目
+          
+          这里展示了我的开源项目和贡献。
+          
+          """
+              
+              for repo in repos:
+                  if not repo.fork and not repo.private:  # 只显示非fork的公开仓库
+                      content += f"""
+          ### {repo.name}
+          
+          - 描述：{repo.description or '暂无描述'}
+          - 技术栈：{repo.language or '未指定'}
+          - [查看项目]({repo.html_url})
+          
+          """
+              
+              with open('content/projects/_index.md', 'w', encoding='utf-8') as f:
+                  f.write(content)
+          
+          if __name__ == '__main__':
+              update_projects()
+          EOF
+          
+          python update_projects.py
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add content/projects/_index.md
+          git commit -m "自动更新项目列表" || echo "No changes to commit"
+          git push
