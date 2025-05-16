@@ -1,6 +1,6 @@
 ---
 title: "关于我"
-date: 2024-01-01
+date: 2025-05-16
 draft: false
 ---
 
@@ -10,9 +10,11 @@ draft: false
 
 ### 技术栈
 
-- 编程语言：[您的技术栈]
-- 开发工具：Git, Docker
-- 其他技能：[其他技能]
+- 编程语言：Java, C++, Python, HTML/CSS
+- 开发工具：Git, Docker, VS Code
+- 框架：Spring Boot
+- 数据库：MySQL
+- 其他技能：PlayGame
 
 ### 联系方式
 
