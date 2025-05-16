@@ -16,13 +16,6 @@ draft: false
 - [查看项目](https://github.com/YanRui06/ClassWork)
 
 
-### Codes
-
-- 描述：暂无描述
-- 技术栈：未指定
-- [查看项目](https://github.com/YanRui06/Codes)
-
-
 ### College-study
 
 - 描述：洛谷刷题记录
@@ -39,7 +32,7 @@ draft: false
 
 ### YanRui06.github.io
 
-- 描述：暂无描述
+- 描述：个人博客网站
 - 技术栈：HTML
 - [查看项目](https://github.com/YanRui06/YanRui06.github.io)
 
