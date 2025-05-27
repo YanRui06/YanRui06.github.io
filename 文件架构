@@ -1,15 +1,30 @@
-YanRui.github.io/
-├── archetypes/     # 内容模板目录
-├── assets/         # 需要处理的资源文件
-├── content/        # 网站内容目录
-├── data/          # 配置数据目录
-├── i18n/          # 国际化文件
-├── layouts/       # 自定义布局目录（当前为空）
-├── public/        # 生成的静态文件
-├── static/        # 静态资源目录
-├── themes/        # 主题目录
-│   └── PaperMod/  # 使用的主题
-├── config.yaml    # 网站配置文件
-└── .github/workflows/  # GitHub Actions 工作流配置
-    ├── hugo.yml        # Hugo 部署工作流
-    └── update-projects.yml  # 项目更新工作流
+YanRui06.github.io/           # 项目根目录
+├── .github/                  # GitHub 相关配置目录
+│   └── workflows/            # GitHub Actions 工作流配置
+│       ├── hugo.yml          # Hugo 自动部署工作流
+│       └── update-projects.yml  # 项目自动更新工作流
+├── .gitignore                # Git 忽略文件配置
+├── CNAME                     # 自定义域名配置文件
+├── archetypes/              # 内容模板目录
+│   └── default.md           # 默认的内容模板
+├── config.yaml              # 站点配置文件
+├── content/                 # 网站内容目录
+│   ├── about/               # 关于页面
+│   │   └── index.md         # 关于页面内容
+│   ├── posts/               # 博客文章目录
+│   │   ├── first-post.md    # 第一篇博客文章
+│   │   └── hugo-blog-setup.md  # Hugo 博客搭建教程
+│   └── projects/            # 项目展示目录
+│       └── _index.md        # 项目列表页面
+├── themes/                  # 主题目录
+│   └── PaperMod/            # PaperMod 主题
+│       ├── .github/         # 主题的 GitHub 配置
+│       ├── LICENSE          # 主题许可证
+│       ├── README.md        # 主题说明文档
+│       ├── assets/          # 主题资源文件
+│       ├── go.mod           # Go 模块定义
+│       ├── i18n/            # 国际化文件
+│       ├── images/          # 主题图片资源
+│       ├── layouts/         # 主题布局模板
+│       └── theme.toml       # 主题配置文件
+└── 文件架构                  # 当前的文件结构说明文件
