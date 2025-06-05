@@ -6,32 +6,8 @@
     <description>Recent content on </description>
     <generator>Hugo -- 0.147.4</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 05 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://yanrui06.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>欢迎来到 Zephyr 的技术世界</title>
-      <link>https://yanrui06.github.io/landing/</link>
-      <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://yanrui06.github.io/landing/</guid>
-      <description>&lt;h1 id=&#34;-你好我是-zephyr&#34;&gt;👋 你好，我是 Zephyr&lt;/h1&gt;
-&lt;h2 id=&#34;关于我&#34;&gt;关于我&lt;/h2&gt;
-&lt;p&gt;我是一名热爱技术的开发者，专注于前端开发、后端架构和开源项目。
-在这里，我分享我的技术经验、学习笔记和项目作品。&lt;/p&gt;
-&lt;h2 id=&#34;我的技能&#34;&gt;我的技能&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;前端开发&lt;/strong&gt;: JavaScript, TypeScript, Vue.js&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;后端开发&lt;/strong&gt;: Node.js, Python, Java&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;数据库&lt;/strong&gt;: MySQL,&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;工具链&lt;/strong&gt;: Git, Docker&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;最新动态&#34;&gt;最新动态&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;🎯 正在学习云原生技术栈&lt;/li&gt;
-&lt;li&gt;📚 持续更新技术博客&lt;/li&gt;
-&lt;li&gt;🚀 开发中的开源项目&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;欢迎探索我的技术世界！&lt;/p&gt;</description>
-    </item>
     <item>
       <title>使用 Hugo 搭建个人博客</title>
       <link>https://yanrui06.github.io/posts/hugo-blog-setup/</link>

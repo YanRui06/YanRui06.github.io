@@ -3,10 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yanrui06.github.io/</loc>
-    <lastmod>2025-06-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yanrui06.github.io/landing/</loc>
-    <lastmod>2025-06-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yanrui06.github.io/categories/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
@@ -43,5 +40,7 @@
   </url><url>
     <loc>https://yanrui06.github.io/projects/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yanrui06.github.io/archives/</loc>
   </url>
 </urlset>

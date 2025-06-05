@@ -47,9 +47,11 @@ params:
     imageHeight: 120
     buttons:
       - name: 首页
-        url: index
+        url: /
       - name: 文章
         url: posts
+      - name: 归档
+        url: archives
       - name: 项目
         url: projects
       - name: 关于
@@ -59,16 +61,25 @@ params:
     - name: github
       url: "https://github.com/YanRui06"
 
+  mainSections: ["posts"]
+
+  # 启用归档页面
+  enableArchive: true
+
 menu:
   main:
-    - identifier: index
+    - identifier: home
       name: 首页
-      url: /index/
+      url: /
       weight: 5
     - identifier: posts
       name: 文章
       url: /posts/
       weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 15
     - identifier: projects
       name: 项目
       url: /projects/
