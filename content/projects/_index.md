@@ -11,7 +11,7 @@ draft: false
 
 ### ClassWork
 
-- 描述：All things for class
+- 描述：一个用来存放作业的仓库
 - 技术栈：Java
 - [查看项目](https://github.com/YanRui06/ClassWork)
 
