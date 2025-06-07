@@ -30,6 +30,13 @@ draft: false
 - [查看项目](https://github.com/YanRui06/Student-Management-System)
 
 
+### YanRui06
+
+- 描述：暂无描述
+- 技术栈：未指定
+- [查看项目](https://github.com/YanRui06/YanRui06)
+
+
 ### YanRui06.github.io
 
 - 描述：个人博客网站
