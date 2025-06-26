@@ -25,7 +25,7 @@ draft: false
 
 ### MarkWord
 
-- 描述：暂无描述
+- 描述：Markdown to Word converter with syntax highlighting and cross-platform support
 - 技术栈：Python
 - [查看项目](https://github.com/YanRui06/MarkWord)
 
