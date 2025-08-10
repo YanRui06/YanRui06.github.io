@@ -1,0 +1,245 @@
+<!-- layouts/partials/footer.html -->
+<footer class="footer">
+      <div class="footer-content"> 
+        <div class="footer-links">
+            <span>
+                <a href="https://icp.ekucat.com/beian/2025080003.html" title="KUCAT盟2025080003号"  target="_blank">KUCAT盟2025080003号</a>
+            </span>
+        </div>
+        
+        {{- if .Site.Params.customFooterHTML }}
+        <div class="custom-footer">
+            {{ .Site.Params.customFooterHTML | safeHTML }}
+        </div>
+        {{- end }}
+        
+        <div class="footer-info">
+            <span>🎯 专注技术分享 · 💡 分享编程智慧</span>
+        </div>
+        
+        <div class="footer-stats">
+            {{- $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+            <span>📝 {{ len $posts }} 篇文章</span>
+            {{- $tags := site.Taxonomies.tags }}
+            <span>🏷️ {{ len $tags }} 个标签</span>
+            <span>⏰ 最后更新: {{ now.Format "2006-01-02" }}</span>
+        </div>
+    </div>
+</footer>
+
+<style>
+.footer {
+    margin-top: auto;
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+    /* 移除固定背景色，使用主题背景 */
+    background: var(--theme);
+    color: var(--content);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-content > * {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* 与主体颜色保持一致 */
+.footer-content span, .footer-content a {
+    color: var(--content);  /* 使用主体内容颜色 */
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-content a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-content a:hover {
+    color: var(--primary);  /* 悬停时使用主要颜色 */
+    border-bottom: 1px solid var(--primary);
+    transform: translateY(-1px);
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.footer-info {
+    font-weight: 500;
+    color: var(--content);  /* 使用主体内容颜色 */
+}
+
+.footer-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-stats span {
+    background: var(--entry);  /* 使用主题入口背景 */
+    color: var(--content);     /* 使用主体内容颜色 */
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    border: 1px solid var(--border);
+}
+
+.footer-copyright {
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--content);  /* 使用主体内容颜色 */
+}
+
+.footer-copyright span {
+    display: block;
+    margin: 0.25rem 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 1rem;
+    }
+    
+    .footer-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .footer-copyright span {
+        font-size: 0.75rem;
+    }
+}
+
+/* 深色模式优化 */
+@media (prefers-color-scheme: dark) {
+    .footer {
+        border-top-color: var(--border);
+        background: var(--theme);
+    }
+    
+    .footer-content a:hover {
+        text-shadow: 0 0 8px var(--primary);
+        color: var(--primary);
+    }
+    
+    .footer-stats span {
+        background: var(--code-bg);
+        border-color: var(--border);
+    }
+    
+    .footer-stats span:hover {
+        background: var(--entry);
+        box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.3);
+    }
+    
+    .footer-info {
+        color: var(--content);
+    }
+}
+
+/* 浅色模式优化 */
+@media (prefers-color-scheme: light) {
+    .footer {
+        border-top-color: #e5e7eb;
+        background: #fafafa;
+    }
+    
+    .footer-content {
+        color: #374151;
+    }
+    
+    .footer-content a {
+        color: #4b5563;
+        transition: all 0.3s ease;
+    }
+    
+    .footer-content a:hover {
+        color: #1f2937;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+        background: rgba(59, 130, 246, 0.05);
+        padding: 0.125rem 0.25rem;
+        border-radius: 3px;
+    }
+    
+    .footer-stats span {
+        background: #ffffff;
+        border-color: #d1d5db;
+        color: #374151;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+    }
+    
+    .footer-stats span:hover {
+        background: #f3f4f6;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-1px);
+        border-color: #9ca3af;
+    }
+    
+    .footer-info {
+        color: #1f2937;
+        font-weight: 600;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    
+    .footer-links a {
+        color: #6b7280;
+        transition: all 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+        color: #374151;
+        background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+        padding: 0.25rem 0.5rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .footer-copyright {
+        color: #6b7280;
+        border-top-color: #e5e7eb;
+    }
+}
+
+/* 自动模式下的额外优化 */
+@media (prefers-color-scheme: no-preference) {
+    .footer {
+        transition: all 0.3s ease;
+    }
+    
+    .footer-content a {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* 确保在所有主题模式下颜色一致 */
+.footer-content * {
+    color: inherit;
+}
+
+.footer a {
+    color: var(--content) !important;
+}
+
+.footer a:hover {
+    color: var(--primary) !important;
+}
+</style>

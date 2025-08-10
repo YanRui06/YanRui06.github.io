@@ -39,7 +39,7 @@ params:
       disable: true
 
   profileMode:
-    enabled: false
+    enabled: true
     title: "Zephyr的技术博客"
     subtitle: "分享技术，记录成长"
     imageUrl: "https://github.com/YanRui06.png"
